@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap');
+
+:root {
+    --primary-background-color: #152238;
+    --primary-background-hover-color: #192841;
+    --primary-text-color: #ecf0f1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-background-color);
+    font-family: "Open Sans";
+}
+
+/* Bodies */ /* Bodies */ /* Bodies */ /* Bodies */ /* Bodies */
+
+.landingPage {
+    background-image: url("../Images/cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.landingPage::after {
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+}
+
+.landingPage > * {
+    position: relative;
+}
+
+/* Bodies */
+
+/* Navbar */
+
+header {
+    margin: 5px 5px 0px 5px;
+    background-color: #152238;
+    height: 80px;
+    z-index: 3;
+}
+
+.headerContainer {
+    padding: 5px 5px;
+    display: flex;
+    place-content: space-between;
+    position: relative;
+    top: 30px;
+}
+
+.headerContainer:hover {
+    background-color: #192841;
+}
+
+.logo {
+    cursor: default;
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 15px;
+}
+
+span {
+    color: #1b663e;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menuIcon {
+    cursor: pointer;
+    fill: #ecf0f1;
+    margin: 0 15px;
+    display: block;
+}
+
+nav {
+    display: none;
+    font-family: "Open Sans";
+    position: fixed;
+    width: 66%;
+    z-index: 5;
+    right: 5px;
+    top: 5px;
+    background: #152238;
+    height: 220px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+
+.mobilemenuHeader {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mmheaderContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5px;
+}
+
+.mmheaderContainer:hover {
+    background-color: #192841;
+}
+
+.mobilemenuHeader h3 {
+    color: #ecf0f1;
+    margin-left: 40%;
+    font-weight: 100;
+    font-size: 13px;
+    padding: 5px 0px;
+}
+
+.exitIcon {
+    height: 15px;
+    margin: 0 15px 2px 0;
+}
+
+nav ul, li {
+    height: 140px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav li {
+    width: 80%;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #192841;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+/* Navbar */
+
+/* Content */
+
+.landingSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.landingSection img {
+    height: 150px;
+    width: 150px;
+    margin-top: 70px;
+}
+
+.exploreButton {
+    font-family: "Open Sans";
+    background-color: #152238;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 15px;
+    width: 90%;
+    margin-top: 260px;
+    padding: 15px 0;
+}
+
+.exploreButton:hover {
+    background-color: #192841;
+}
+
+.cptheroSection {
+    background-image: url("../Images/capetown.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 250px;
+    margin: 0 5px;
+}
+
+.cptheroSection h1 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    padding: 5px 15px;
+}
+
+.cptparagraphSection {
+    margin: 20px 10px;
+}
+
+.cptparagraphSection p {
+    font-size: 13px;
+    color: var(--primary-background-color);
+} 
+
+.cpttoursSection {
+    margin: 0 10px;
+}
+
+.cpttoursSection h2 {
+    text-transform: uppercase;
+}
+
+.cpttoursSection h3 {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.cpttoursSection h2, h3 {
+    color: var(--primary-background-color);
+}
+
+.tours {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.tourItem {
+    background-color: lightgrey;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.bookingSection {
+    background-color: var(--primary-background-color);
+    margin: 30px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookingSection:hover {
+    background-color: var(--primary-background-hover-color);
+}
+
+.bookingSection > * {
+    padding: 15px;
+    font-weight: normal;
+    color: #ecf0f1;
+}
+
+.bookingSection img {
+    height: 20px;
+    padding: 0 20px;
+}
+
+.bookingButton {
+    display: flex;
+    align-items: center;
+}
+
+.bookingButton h4 {
+    font-weight: normal;
+    color: #ecf0f1;
+}
+
+.dbnheroSection {
+    margin: 0 5px;
+    background-image: url("/Images/durban.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.dbnheroSection h1 {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.recommendationSection {
+    margin: 0 10px;
+    display: flex;
+    place-content: space-between;
+}
+
+.locationReview h2 {
+    font-size: 18px;
+}
+
+.locationRating {
+    display: flex;
+    align-items: center;
+}
+
+.locationRating img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.locationImage {
+    border-left: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    height: 70px;
+}
+
+.locationImage img {
+    height: 70px;
+    width: 80px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.jhbheroSection {
+    margin: 0 5px;
+    background-image: url("../Images/johannesburg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.jhbheroSection h1 {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    font-size: 24px;
+}
+
+.jhbexploreButton {
+    font-family: "Open Sans";
+    background-color: #152238;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.jhbparagraphSection {
+    margin: 10px 10px;
+}
+
+.jhbparagraphSection p {
+    font-size: 13px;
+}
+
+.activitySection {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.activities {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+
+}
+
+.activityItem1 {
+    background-image: url("/Images/jhb_cradle_humankind.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.activityItem2 {
+    background-image: url("/Images/jhb_aparthied_museum.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.priceTag {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-weight: normal;
+    font-size: 11px;
+    width: 50px;
+    background-color: lightseagreen;
+}
+
+.activityTitle {
+    color: var(--primary-text-color);
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* Content*/ /* Content*/ /* Content*/ /* Content*/ /* Content*/
+
+/* Responsiveness */ /* Responsiveness */ /* Responsiveness */ /* Responsiveness */ /* Responsiveness */
+
+@media (min-width: 400px) {
+
+    .cptheroSection {
+        display: inline-block;
+        width: 90%;
+        background-position: right;
+    }
+
+    .jhbheroSection {
+        display: inline-block;
+        width: 90%;
+        background-position: top right;
+    }
+
+    .dbnheroSection {
+        display: inline-block;
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) {
+
+    header {
+        grid-column: 1 / -1;
+    }
+
+    .headerContainer {
+        position: relative;
+    }
+
+    .headerContainer svg, .mobilemenuHeader {
+        display: none;
+    }
+
+    nav {
+        background: none;
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 0;
+    }
+
+    nav ul {
+        flex-direction: unset;
+        align-items: center;
+        height: 40px;
+    }
+
+    nav li {
+        height: 50px;
+        width: 120px;
+        border: none;
+        text-align: center;
+    }
+
+    nav a {
+        width: auto;
+        padding: 8px 0;
+    }
+
+    .landingSection {
+        margin-top: 100px;
+    }
+
+    .landingSection img {
+        margin-top: 120px;
+    }
+
+    .landingSection button {
+        margin-top: 210px;
+        max-width: 700px;
+    }
+
+    .cptheroSection {
+        background-position: center;
+    }
+    
+    .cptparagraphSection {
+        grid-column: 2 / -1;
+        margin: 50px 30px 10px 30px;
+        padding: 10px;
+    }
+
+    .cptparagraphSection p {
+        font-size: 12px;
+    }
+
+    .dbnheroSection {
+        background-position: bottom;
+    }
+
+    .jhbheroSection {
+        background-position: top right;
+    }
+
+    .jhbparagraphSection {
+        margin: 10px 30px;
+        padding: 10px;
+    }
+
+    .jhbparagraphSection p {
+        font-size: 12px;
+    }
+
+    .cpttoursSection {
+        grid-column: 1 / -1;
+        margin: 100px 10px;
+        
+    }
+
+    .cpttoursSection h2 {
+        display: block;
+        background-color: var(--primary-background-color);
+        color: var(--primary-text-color);
+        padding: 10px 50px;
+        border-radius: 20px;
+    }
+
+    .tours {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .tourItem h3{
+        font-size: 20px;
+        padding: 50px 25px;
+    }
+
+    .activitySection {
+        margin: 80px 0;
+        grid-column: 1 / -1;
+    }
+
+    .activities {
+        height: 100%;
+    }
+
+    .activityItem1 {
+        height: 300px;
+        width: 250px;
+    }
+
+    .activityItem2 {
+        height: 300px;
+        width: 250px;
+    }
+
+    .jhbexploreButton {
+        width: 97%;
+        margin-top: 100px;
+    }
+
+    .recommendationSection {
+        height: 100%;
+        grid-column: 1 / -1;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    .locationReview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommendationSection .locationReview h2 {
+        font-size: 32px;
+    }
+
+    .locationRating {
+        padding-top: 30px;
+    }
+
+    .locationRating img {
+        height: 100px;
+    }
+
+    .locationRating h6 {
+        font-size: 20px;
+    }
+
+    .locationImage img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .bookingSection {
+        margin: 100px 0;
+    }
+}
+
+@media (min-width: 1050px) {
+
+    .landingSection {
+        margin: 0;
+    }
+
+    .cptparagraphSection {
+        padding: 50px 50px 20px 50px;
+    }
+
+    .bookingSection {
+        grid-column: 1 / -1;
+    }
+
+    .jhbparagraphSection {
+        padding: 50px 50px 20px 50px;
+    }
+
+    .activitySection {
+        margin-top: 100px;
+    }
+
+    .activityItem1 {
+        width: 400px;
+    }
+
+    .activityItem2 {
+        width: 400px;
+    }
+
+    .activityTitle {
+        font-size: 15px;
+    }
+
+    .priceTag {
+        font-size: 18px;
+        width: 100px;
+    }
+
+    .jhbexploreButton:hover {
+        background-color: var(--primary-background-hover-color);
+    }
+
+}
