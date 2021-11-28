@@ -17,6 +17,7 @@
 /* Bodies */ /* Bodies */ /* Bodies */ /* Bodies */ /* Bodies */
 
 .landingPage {
+    height: 100vh;
     background-image: url("../Images/cover.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
