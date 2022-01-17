@@ -166,7 +166,7 @@ nav a:hover {
     height: 100%;
     width: 100%;
     background-color: white;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .landingSection {
@@ -182,7 +182,7 @@ nav a:hover {
 .flightIcon {
     height: 150px;
     width: 150px;
-    margin-top: 50px;
+    margin-top: 50%;
 }
 
 .exploreButton {
@@ -505,7 +505,7 @@ nav a:hover {
     }
 
     .landingSection {
-        margin-top: 100px;
+        margin-top: 40%;
     }
 
     .landingSection img {
